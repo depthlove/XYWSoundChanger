@@ -45,6 +45,7 @@
 		8504BD251E305FF9000C8DAD /* XCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 8504BD101E305FF9000C8DAD /* XCategory.m */; };
 		8504BD281E3064D2000C8DAD /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8504BD271E3064D2000C8DAD /* DetailViewController.m */; };
 		8504BD2A1E3088DB000C8DAD /* 0.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 8504BD291E3088DB000C8DAD /* 0.mp4 */; };
+		8504BD2C1E30A6E1000C8DAD /* 1.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 8504BD2B1E30A6E1000C8DAD /* 1.mp4 */; };
 		8514FA0D1E2F49AB001A4751 /* AudioConvert.mm in Sources */ = {isa = PBXBuildFile; fileRef = 8514F9CE1E2F49AB001A4751 /* AudioConvert.mm */; };
 		8514FA0E1E2F49AB001A4751 /* AudioDecodeOperation.mm in Sources */ = {isa = PBXBuildFile; fileRef = 8514F9D11E2F49AB001A4751 /* AudioDecodeOperation.mm */; };
 		8514FA0F1E2F49AB001A4751 /* CAStreamBasicDescription.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8514F9D41E2F49AB001A4751 /* CAStreamBasicDescription.cpp */; };
@@ -156,6 +157,7 @@
 		8504BD261E3064D2000C8DAD /* DetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
 		8504BD271E3064D2000C8DAD /* DetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
 		8504BD291E3088DB000C8DAD /* 0.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = 0.mp4; sourceTree = "<group>"; };
+		8504BD2B1E30A6E1000C8DAD /* 1.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = 1.mp4; sourceTree = "<group>"; };
 		8514F9CD1E2F49AB001A4751 /* AudioConvert.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AudioConvert.h; sourceTree = "<group>"; };
 		8514F9CE1E2F49AB001A4751 /* AudioConvert.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = AudioConvert.mm; sourceTree = "<group>"; };
 		8514F9D01E2F49AB001A4751 /* AudioDecodeOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AudioDecodeOperation.h; sourceTree = "<group>"; };
@@ -681,6 +683,7 @@
 				8504BD271E3064D2000C8DAD /* DetailViewController.m */,
 				8569B6D51E2CBA1D00F4972B /* 第一夫人-铃声.wav */,
 				8504BD291E3088DB000C8DAD /* 0.mp4 */,
+				8504BD2B1E30A6E1000C8DAD /* 1.mp4 */,
 				8569B69D1E2CB1FF00F4972B /* Main.storyboard */,
 				8569B6A01E2CB1FF00F4972B /* Assets.xcassets */,
 				8569B6A21E2CB1FF00F4972B /* LaunchScreen.storyboard */,
@@ -787,6 +790,7 @@
 				8504BC401E3058C1000C8DAD /* SVProgressHUD.bundle in Resources */,
 				8569B6A41E2CB1FF00F4972B /* LaunchScreen.storyboard in Resources */,
 				8569B6A11E2CB1FF00F4972B /* Assets.xcassets in Resources */,
+				8504BD2C1E30A6E1000C8DAD /* 1.mp4 in Resources */,
 				8504BCD61E305FC4000C8DAD /* zyplayer_repeat@2x.png in Resources */,
 				8504BCD51E305FC4000C8DAD /* zyplayer_play@3x.png in Resources */,
 				8504BCD91E305FC4000C8DAD /* zyplayer_slider@3x.png in Resources */,

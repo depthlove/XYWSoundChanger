@@ -28,13 +28,13 @@
                                     <action selector="ptichChange:" destination="BYZ-38-t0r" eventType="valueChanged" id="cp8-HP-y3z"/>
                                 </connections>
                             </slider>
-                            <slider opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" minValue="0.0" maxValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="wb1-X7-PdR">
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" minValue="0.0" maxValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="wb1-X7-PdR">
                                 <rect key="frame" x="153" y="483" width="209" height="31"/>
                                 <connections>
                                     <action selector="rateChange:" destination="BYZ-38-t0r" eventType="valueChanged" id="1cV-V3-hjN"/>
                                 </connections>
                             </slider>
-                            <slider opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" minValue="-50" maxValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="2va-6U-Tc5">
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" minValue="-50" maxValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="2va-6U-Tc5">
                                 <rect key="frame" x="153" y="401" width="209" height="31"/>
                                 <connections>
                                     <action selector="tempo:" destination="BYZ-38-t0r" eventType="valueChanged" id="rBt-Nz-4Mw"/>
@@ -88,8 +88,8 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rQX-VF-pmD">
-                                <rect key="frame" x="81" y="518" width="77" height="30"/>
-                                <state key="normal" title="播放原视频"/>
+                                <rect key="frame" x="128" y="518" width="30" height="30"/>
+                                <state key="normal" title="男"/>
                                 <connections>
                                     <action selector="onPlayCLick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="aSb-DU-Esg"/>
                                 </connections>
@@ -186,7 +186,7 @@
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Crc-g1-I8H">
                                 <rect key="frame" x="20" y="84" width="335" height="583"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <mutableString key="text">左右app从拍摄到变声过程：
+                                <string key="text">左右app从拍摄到变声过程：
 1.用户通过暂停、拍摄操作拍摄多短视频，为mov格式。
 2.循环读取各段视频中的音频轨道和视频轨道，累加到一个音频轨道和视频轨道，最终合成为一个视频，转码为mp4格式。
 3.在合成后的视频中，取出来音频轨道，存为aac文件。
@@ -194,7 +194,7 @@
 5.pcm转码为wav文件。
 6.对wav文件进行变声操作。
 7.编码为wav格式，保存为变声后的音频文件。
-8.取变声后的音频文件的音轨和原视频文件的视频轨道，合成新的视频，保存为mp4. ［9］.安卓可能无法wav格式直接合并，需反向解码编码为acc格式后执行合并新视频操作。</mutableString>
+8.取变声后的音频文件的音轨和原视频文件的视频轨道，合成新的视频，保存为mp4. ［9］.安卓可能无法wav格式直接合并，需反向解码编码为acc格式后执行合并新视频操作。</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>

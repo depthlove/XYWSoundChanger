@@ -103,11 +103,28 @@
         [self.player resetToPlayNewURL];
         [self.waitView stopAnimating];
     }else{
-        NSString *videoPath = [[NSBundle mainBundle] pathForResource:@"0" ofType:@"mp4"];
-        NSURL *videoUrl = [NSURL fileURLWithPath:videoPath];
-        [self.player setVideoURL:videoUrl];
-        [self.player autoPlayTheVideo];
+        CoreSVPLoading(@"视频处理中..", NO);
+        NSDate* tmpStartData = [NSDate date];
+        self.startDate = tmpStartData;
         [self.waitView startAnimating];
+        NSString *sourceVideoPath = [[NSBundle mainBundle] pathForResource:@"1" ofType:@"mp4"];
+        ZYSoundChanger *manager = [ZYSoundChanger changer];
+        [manager changeVideo:sourceVideoPath withTempo:self.tempoChangeNum andPitch:self.pitchSemiTonesNum andRate:self.rateChangeNum sucess:^(NSString *videoPath) {
+            dispatch_async(dispatch_get_main_queue(), ^{
+                [CoreSVP dismiss];
+                NSLog(@"视频合成完毕！ %@",videoPath);
+                CoreSVPCenterMsg(@"视频合成完毕！");
+                CGFloat time = fabs([self.startDate timeIntervalSinceNow]);
+                self.timeLabel.text = [NSString stringWithFormat:@"耗时:%.1f",time];
+                [self.player setVideoURL:[NSURL fileURLWithPath:videoPath]];
+                [self.player autoPlayTheVideo];
+                [self.waitView startAnimating];
+            });
+            
+        } failure:^(NSError *error) {
+            NSLog(@"视频合成出错：%@",error.localizedDescription);
+            CoreSVPCenterMsg(@"视频合成出错！");
+        }];
     }
 //    sender.selected = !sender.selected;
 ////    sender.selected?[self.waitView startAnimating]:[self.waitView stopAnimating];
